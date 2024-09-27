@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="bg-light rounded h-100 p-4">
-                        <h2 class="mb-4">Clientes</h2>
+                        <h2 class="mb-4">Proveedores</h2>
                         <div class="table-responsive">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-hover" OnDataBinding="GridView1_DataBinding">
                                 <Columns>

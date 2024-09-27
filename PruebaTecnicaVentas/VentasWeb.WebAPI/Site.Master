@@ -70,6 +70,7 @@
                     <div class="navbar-nav w-100">
                         <a class="nav-item nav-link" runat="server" href="~/"><i class="fa fa-home me-2"></i>Inicio</a>
                         <a class="nav-item nav-link" runat="server" href="~/Views/Clientes"><i class="fa fa-user me-2"></i>Clientes</a>
+                        <a class="nav-item nav-link" runat="server" href="~/Views/Proveedores"><i class="fa fa-user me-2"></i>Proveedores</a>
                     </div>
                 </nav>
             </div>
