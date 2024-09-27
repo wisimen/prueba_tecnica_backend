@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1DEC69AA-1E37-4CAB-A4E0-1099723A2799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.Domain", "VentasWeb.Domain\VentasWeb.Domain.csproj", "{5A854D65-D0AF-4E1A-8371-2D25ED7151F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VentasWeb.Domain", "VentasWeb.Domain\VentasWeb.Domain.csproj", "{5A854D65-D0AF-4E1A-8371-2D25ED7151F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.WebAPI", "VentasWeb.WebAPI\VentasWeb.WebAPI.csproj", "{FB9F269D-E709-48B9-996B-0442139C8BCC}"
 EndProject
@@ -15,7 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{987BEB0A-2394-45A9-AF0C-0D057CE993A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.Infrastructure", "VentasWeb.Infrastructure\VentasWeb.Infrastructure.csproj", "{5D616BC9-3141-4BD2-9670-A9F85D214666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VentasWeb.Infrastructure", "VentasWeb.Infrastructure\VentasWeb.Infrastructure.csproj", "{5D616BC9-3141-4BD2-9670-A9F85D214666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.Application", "VentasWeb.Application\VentasWeb.Application.csproj", "{6845DA8D-E5C6-4442-A86C-822F66FCC786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.Shared", "VentasWeb.Shared\VentasWeb.Shared.csproj", "{C2B57248-3A3E-43A5-BD0F-D5D979D786B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasWeb.Persistence", "VentasWeb.Persistence\VentasWeb.Persistence.csproj", "{21530428-40EF-48B8-8401-ECFBE1173C30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,18 @@ Global
 		{5D616BC9-3141-4BD2-9670-A9F85D214666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D616BC9-3141-4BD2-9670-A9F85D214666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D616BC9-3141-4BD2-9670-A9F85D214666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6845DA8D-E5C6-4442-A86C-822F66FCC786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6845DA8D-E5C6-4442-A86C-822F66FCC786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6845DA8D-E5C6-4442-A86C-822F66FCC786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6845DA8D-E5C6-4442-A86C-822F66FCC786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B57248-3A3E-43A5-BD0F-D5D979D786B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B57248-3A3E-43A5-BD0F-D5D979D786B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B57248-3A3E-43A5-BD0F-D5D979D786B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B57248-3A3E-43A5-BD0F-D5D979D786B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21530428-40EF-48B8-8401-ECFBE1173C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21530428-40EF-48B8-8401-ECFBE1173C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21530428-40EF-48B8-8401-ECFBE1173C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21530428-40EF-48B8-8401-ECFBE1173C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +61,9 @@ Global
 		{5A854D65-D0AF-4E1A-8371-2D25ED7151F9} = {1DEC69AA-1E37-4CAB-A4E0-1099723A2799}
 		{FB9F269D-E709-48B9-996B-0442139C8BCC} = {B6CC15A0-64B1-49C5-AC48-AC7FBE44C3D2}
 		{5D616BC9-3141-4BD2-9670-A9F85D214666} = {93982EA3-5185-4FE1-8505-785F4D5FF7A6}
+		{6845DA8D-E5C6-4442-A86C-822F66FCC786} = {1DEC69AA-1E37-4CAB-A4E0-1099723A2799}
+		{C2B57248-3A3E-43A5-BD0F-D5D979D786B0} = {987BEB0A-2394-45A9-AF0C-0D057CE993A9}
+		{21530428-40EF-48B8-8401-ECFBE1173C30} = {93982EA3-5185-4FE1-8505-785F4D5FF7A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {474C5F4E-6937-460F-B758-697BEB7C1A35}

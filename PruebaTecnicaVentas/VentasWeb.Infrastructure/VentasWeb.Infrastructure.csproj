@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VentasWeb.Application\VentasWeb.Application.csproj" />
+    <ProjectReference Include="..\VentasWeb.Persistence\VentasWeb.Persistence.csproj" />
+  </ItemGroup>
 
 </Project>

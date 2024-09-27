@@ -22,7 +22,29 @@ namespace VentasWeb.WebAPI
                             "~/Scripts/WebForms/GridView.js",
                             "~/Scripts/WebForms/DetailsView.js",
                             "~/Scripts/WebForms/TreeView.js",
-                            "~/Scripts/WebForms/WebParts.js"));
+                            "~/Scripts/WebForms/WebParts.js",
+                            "~/Scripts/main.js",
+                            "~/Scripts/lib/chart/chart.min.js",
+                            "~/Scripts/lib/easing/easing.min.js",
+                            "~/Scripts/lib/waypoints/waypoints.min.js",
+                            "~/Scripts/lib/owlcarousel/owl.carousel.min.js",
+                            "~/Scripts/lib/tempusdominus/js/moment.min.js",
+                            "~/Scripts/lib/tempusdominus/js/moment-timezone.min.js",
+                            "~/Scripts/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"
+                            ));
+            bundles.Add(new Bundle("~/bundles/master").Include(
+                "~/Scripts/jquery-3.7.0.min.js",
+                "~/Scripts/lib/chart/chart.min.js",
+                "~/Scripts/lib/easing/easing.min.js",
+                "~/Scripts/lib/waypoints/waypoints.min.js",
+                "~/Scripts/lib/owlcarousel/owl.carousel.min.js",
+                "~/Scripts/lib/tempusdominus/js/moment.min.js",
+                "~/Scripts/lib/tempusdominus/js/moment-timezone.min.js",
+                "~/Scripts/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js",
+                "~/Scripts/custom.js",
+                "~/Scripts/main.js"
+                ));
+
 
             // El orden es muy importante para el funcionamiento de estos archivos ya que tienen dependencias explícitas
             bundles.Add(new ScriptBundle("~/bundles/MsAjaxJs").Include(
@@ -35,6 +57,8 @@ namespace VentasWeb.WebAPI
             // para la producción, use la herramienta de compilación disponible en https://modernizr.com para seleccionar solo las pruebas que necesite
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
+
+            //BundleTable.EnableOptimizations = true;
         }
 
         public static void RegisterJQueryScriptManager()
