@@ -18,5 +18,16 @@ namespace VentasWeb.WebAPI.Views
         {
 
         }
+
+        protected void GridView1_DataBinding(object sender, EventArgs e)
+        {
+
+            ScriptManager.RegisterStartupScript(this,
+                                    GetType(),
+                                     "key",
+                                     "runScript(hideSpinner);",
+                                     true);
+
+        }
     }
 }

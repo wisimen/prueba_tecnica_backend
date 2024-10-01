@@ -20,6 +20,7 @@
                                     <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
                                     <asp:CommandField ShowEditButton="True" ControlStyle-CssClass="btn btn-sm bg-info btn-lg-square" />
                                     <asp:CommandField ShowDeleteButton="True" ControlStyle-CssClass="btn btn-sm bg-danger btn-lg-square" />
+                                    <asp:CommandField ShowInsertButton="true" ControlStyle-CssClass="btn btn-sm bg-success btn-lg-square" />
                                 </Columns>
                             </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 

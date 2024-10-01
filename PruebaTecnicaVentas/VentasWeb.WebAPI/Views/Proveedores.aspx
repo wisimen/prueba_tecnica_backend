@@ -11,7 +11,8 @@
                     <div class="bg-light rounded h-100 p-4">
                         <h2 class="mb-4">Proveedores</h2>
                         <div class="table-responsive">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-hover" OnDataBinding="GridView1_DataBinding">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-hover" OnDataBinding="GridView1_DataBinding"
+                              >
                                 <Columns>
                                     <asp:BoundField DataField="Id" Visible="false" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
@@ -19,6 +20,7 @@
                                     <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
                                     <asp:CommandField ShowEditButton="True" ControlStyle-CssClass="btn btn-sm bg-info btn-lg-square" />
                                     <asp:CommandField ShowDeleteButton="True" ControlStyle-CssClass="btn btn-sm bg-danger btn-lg-square" />
+                                    <asp:CommandField ShowInsertButton="true" ControlStyle-CssClass="btn btn-sm bg-success btn-lg-square" />
                                 </Columns>
                             </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
